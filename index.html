@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timed Coding Quiz</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Luxurious+Roman&family=Noto+Emoji:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+        <button id="highscores-btn">High Scores</button>
+
+        <div id="main-container">
+
+        <div id="highscores-container" style="display: none;">
+            <h3>Top 3 High Scores:</h3>
+            <ul id="highscores-list">
+            </ul>
+        </div>
+
+        <div class="content-center start-container">
+            <p class="starting-text"> Coding Quiz Challenge</p>
+            <p class="starting-text2"> 10 Question Quiz to test your knowledge of Javascript! Can you get 10/10?</p>
+            <button id='start-btn'>Start Quiz</button>
+        </div>
+
+        <div id="timer">Time Left: 60</div>
+
+        <div id="quiz-area" class="quiz-content" style="display:none;">
+            <div id="question-container">
+                <p id='question'></p>
+            </div>
+            <div class="quiz-content">
+                <button class="answer-btn"><span class="option-number">1.</span> Option 1</button>
+                <button class="answer-btn"><span class="option-number">2.</span> Option 2</button>
+                <button class="answer-btn"><span class="option-number">3.</span> Option 3</button>
+                <button class="answer-btn"><span class="option-number">4.</span> Option 4</button>
+            </div>
+            <div id="feedback" style="display:none;"></div>
+        </div>
+
+    <div id='end-area' style='display:none;'>
+        <p id="save-text">All Done!</p>
+        <p id="save-text2">Your Score is: <span id='score'></span></p>
+        <button id='save-btn'>Submit</button>
+        <input type='text' id='initials' placeholder='Enter your Initials'>
+    </div>
+
+</main>
+
+    <script src='script.js'></script>
+
+</body>
+
+</html>
